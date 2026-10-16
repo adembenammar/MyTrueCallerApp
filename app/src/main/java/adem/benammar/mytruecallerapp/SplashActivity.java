@@ -14,6 +14,7 @@ public class SplashActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        Ecran.appliquer(this, findViewById(R.id.main), null, true);
 
         // attendre 2,5 s puis passer à l'authentification
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {

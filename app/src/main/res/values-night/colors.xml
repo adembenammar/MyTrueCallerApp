@@ -1,38 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Palette Material 3 (sombre) : tons plus clairs du bleu et de l'orange -->
-    <color name="md_primary">#A5C8FF</color>
-    <color name="md_on_primary">#00315F</color>
-    <color name="md_primary_container">#1565B8</color>
-    <color name="md_on_primary_container">#D3E4FF</color>
+    <!-- Identité (sombre) : l'en-tête reste bleu nuit, les surfaces passent en ardoise -->
+    <color name="brand_navy">#07101F</color>
+    <color name="brand_blue">#3B76F6</color>
+    <color name="brand_blue_dark">#A9C2FF</color>
 
-    <color name="md_secondary">#FFB74D</color>
-    <color name="md_on_secondary">#442700</color>
-    <color name="md_secondary_container">#6B4200</color>
+    <color name="app_bg">#0B1220</color>
+    <color name="surface">#151D30</color>
+    <color name="ink">#E8ECF4</color>
+    <color name="ink_soft">#C3CAD9</color>
+    <color name="ink_muted">#98A2B8</color>
+    <color name="field_bg">#1C263C</color>
+    <color name="field_stroke">#2A3550</color>
+    <color name="button_stroke">#33405E</color>
+    <color name="divider">#222C42</color>
+
+    <color name="call_bg">#12372A</color>
+    <color name="call_fg">#6FD9A0</color>
+    <color name="danger_bg">#3E1A18</color>
+    <color name="danger_fg">#FFB4AB</color>
+
+    <color name="avatar_blue_bg">#1E2E57</color>
+    <color name="avatar_blue_fg">#A9C2FF</color>
+    <color name="avatar_amber_bg">#3D2C0E</color>
+    <color name="avatar_amber_fg">#FFC966</color>
+    <color name="avatar_violet_bg">#2D2452</color>
+    <color name="avatar_violet_fg">#C9B8FF</color>
+    <color name="avatar_green_bg">#12372A</color>
+    <color name="avatar_green_fg">#6FD9A0</color>
+
+    <!-- Palette Material 3 (sombre) -->
+    <color name="md_primary">#3B76F6</color>
+    <color name="md_on_primary">#FFFFFF</color>
+    <color name="md_primary_container">#1E2E57</color>
+    <color name="md_on_primary_container">#DCE6FF</color>
+
+    <color name="md_secondary">#F5A524</color>
+    <color name="md_on_secondary">#2B1700</color>
+    <color name="md_secondary_container">#3D2C0E</color>
     <color name="md_on_secondary_container">#FFDDB0</color>
 
-    <color name="md_error">#F2B8B5</color>
+    <color name="md_error">#FFB4AB</color>
     <color name="md_on_error">#601410</color>
 
-    <color name="md_background">#101418</color>
-    <color name="md_on_background">#E1E2E8</color>
-    <color name="md_surface">#101418</color>
-    <color name="md_on_surface">#E1E2E8</color>
-    <color name="md_surface_variant">#43474E</color>
-    <color name="md_on_surface_variant">#C3C7CF</color>
-    <color name="md_outline">#8D9199</color>
-    <color name="md_outline_variant">#43474E</color>
+    <color name="md_background">#0B1220</color>
+    <color name="md_on_background">#E8ECF4</color>
+    <color name="md_surface">#151D30</color>
+    <color name="md_on_surface">#E8ECF4</color>
+    <color name="md_surface_variant">#2A3550</color>
+    <color name="md_on_surface_variant">#98A2B8</color>
+    <color name="md_outline">#98A2B8</color>
+    <color name="md_outline_variant">#2A3550</color>
 
-    <color name="md_surface_container_lowest">#0B0F13</color>
-    <color name="md_surface_container_low">#191C20</color>
-    <color name="md_surface_container">#1D2024</color>
-    <color name="md_surface_container_high">#272A2F</color>
-    <color name="md_surface_container_highest">#32353A</color>
-
-    <color name="bg_gradient_start">#14202E</color>
-    <color name="bg_gradient_end">#101418</color>
-    <color name="deco_1">#33A5C8FF</color>
-    <color name="deco_2">#33FFB74D</color>
-    <color name="deco_3">#26A5C8FF</color>
-    <color name="deco_4">#2E1565B8</color>
+    <color name="md_surface_container_lowest">#0B1220</color>
+    <color name="md_surface_container_low">#151D30</color>
+    <color name="md_surface_container">#1C263C</color>
+    <color name="md_surface_container_high">#151D30</color>
+    <color name="md_surface_container_highest">#2A3550</color>
 </resources>

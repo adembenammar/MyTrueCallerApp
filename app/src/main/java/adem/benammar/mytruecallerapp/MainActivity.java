@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         // mettre un fichier xml sur lecran
         setContentView(R.layout.activity_main);
+        Ecran.appliquer(this, findViewById(R.id.main), findViewById(R.id.header), true);
 
         // récupération des composants
         edmail=findViewById(R.id.ed_user_auth);

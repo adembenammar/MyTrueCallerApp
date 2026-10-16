@@ -15,7 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -27,7 +27,8 @@ public class Affiche extends AppCompatActivity {
 
     RecyclerView rvaffiche;
     EditText edrecherche;
-    TextView tvvide;
+    TextView tvvide, tvcount;
+    View llvide;
     MyRecyclerContactAdapter ad;
     DBHelper db;
     String numeroEnAttente;
@@ -36,18 +37,23 @@ public class Affiche extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_affiche);
+        Ecran.appliquer(this, findViewById(R.id.main), null, false);
 
         db = new DBHelper(this);
 
         rvaffiche = findViewById(R.id.rv_affiche);
         edrecherche = findViewById(R.id.ed_recherche);
         tvvide = findViewById(R.id.tv_vide);
+        tvcount = findViewById(R.id.tv_count_affiche);
+        llvide = findViewById(R.id.ll_vide);
+
+        findViewById(R.id.btn_retour_affiche).setOnClickListener(v -> finish());
 
         findViewById(R.id.fab_ajout).setOnClickListener(v ->
                 startActivity(new Intent(this, Ajout.class)));
 
         ad = new MyRecyclerContactAdapter(this, new ArrayList<Contact>());
-        rvaffiche.setLayoutManager(new GridLayoutManager(this, 2));
+        rvaffiche.setLayoutManager(new LinearLayoutManager(this));
         rvaffiche.setAdapter(ad);
 
         edrecherche.addTextChangedListener(new android.text.TextWatcher() {
@@ -67,7 +73,8 @@ public class Affiche extends AppCompatActivity {
         String q = edrecherche.getText().toString().toLowerCase(Locale.getDefault()).trim();
         ArrayList<Contact> resultat = new ArrayList<>();
 
-        for (Contact c : db.tous()) {
+        ArrayList<Contact> tous = db.tous();
+        for (Contact c : tous) {
             if (c.nom.toLowerCase(Locale.getDefault()).contains(q)
                     || c.pseudo.toLowerCase(Locale.getDefault()).contains(q)
                     || c.numero.contains(q)) {
@@ -76,7 +83,9 @@ public class Affiche extends AppCompatActivity {
         }
 
         ad.setData(resultat);
-        tvvide.setVisibility(resultat.isEmpty() ? View.VISIBLE : View.GONE);
+        llvide.setVisibility(resultat.isEmpty() ? View.VISIBLE : View.GONE);
+        int n = tous.size();
+        tvcount.setText(n + (n > 1 ? " contacts" : " contact"));
         tvvide.setText(q.isEmpty()
                 ? "Aucun contact\nAppuyez sur + pour en ajouter"
                 : "Aucun résultat pour cette recherche");
