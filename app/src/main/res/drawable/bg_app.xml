@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- dégradé vertical : bleu très clair vers fond de l'application (couleurs adaptées au mode sombre) -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:endColor="@color/bg_gradient_end"
+                android:startColor="@color/bg_gradient_start" />
+        </shape>
+    </item>
+
+    <!-- décor en haut à droite -->
+    <item
+        android:width="240dp"
+        android:height="240dp"
+        android:drawable="@drawable/deco_haut"
+        android:gravity="top|end" />
+
+    <!-- décor en bas à gauche -->
+    <item
+        android:width="280dp"
+        android:height="280dp"
+        android:drawable="@drawable/deco_bas"
+        android:gravity="bottom|start" />
+</layer-list>
