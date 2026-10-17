@@ -37,7 +37,7 @@ public class Affiche extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_affiche);
-        Ecran.appliquer(this, findViewById(R.id.main), null, false);
+        Ecran.appliquer(this, findViewById(R.id.main), null, true);
 
         db = new DBHelper(this);
 

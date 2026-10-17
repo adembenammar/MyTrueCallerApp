@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Thème Material 3 : suit automatiquement le mode clair/sombre (couleurs dans values/ et values-night/) -->
-    <style name="Base.Theme.MyTrueCallerApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <!-- Thème Material 3 sombre premium : toujours sombre, accent émeraude -->
+    <style name="Base.Theme.MyTrueCallerApp" parent="Theme.Material3.Dark.NoActionBar">
         <item name="colorPrimary">@color/md_primary</item>
         <item name="colorOnPrimary">@color/md_on_primary</item>
         <item name="colorPrimaryContainer">@color/md_primary_container</item>
@@ -39,8 +39,8 @@
 
         <item name="android:statusBarColor">@android:color/transparent</item>
         <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">false</item>
     </style>
 
     <style name="Theme.MyTrueCallerApp" parent="Base.Theme.MyTrueCallerApp" />

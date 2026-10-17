@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fond des boutons principaux : émeraude plein avec effet d'appui -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#3303150E">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/brand_primary" />
+            <corners android:radius="18dp" />
+        </shape>
+    </item>
+</ripple>

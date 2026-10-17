@@ -11,17 +11,18 @@ Application Android de gestion de contacts : connexion, ajout, recherche, appel,
 - **Appel direct** depuis la liste (la permission `CALL_PHONE` est demandée au premier appel).
 - **Feuille de contact** (en bas de l'écran) pour appeler, modifier ou supprimer un contact, avec confirmation avant suppression.
 - **Ajout de contact** avec champs obligatoires et avatar qui affiche les initiales pendant la saisie.
-- **Thème clair et sombre** suivant le réglage du téléphone.
+- **Thème toujours sombre**, quel que soit le réglage du téléphone.
 
 ## Design
 
-Thème Material 3 en bleu nuit (`#0A1630`), bleu vif (`#2563EB`) et ambre (`#F5A524`) :
+Thème Material 3 **sombre premium** : fond graphite (`#0B0D10`), surfaces `#15181D`, accent vert émeraude (`#10B981`) et touche dorée (`#E8C468`) :
 
-- en-tête bleu nuit arrondi sur Splash, Connexion et Accueil ;
-- champs et boutons aux coins arrondis (16 dp), icônes vectorielles au trait ;
+- en-tête graphite arrondi avec halo émeraude sur Splash, Connexion et Accueil ;
+- boutons principaux, tuile « Ajouter » et bouton flottant en émeraude, texte foncé ;
+- cartes sans ombre bordées d'un trait fin, avatars aux teintes sobres, icônes vectorielles au trait ;
 - affichage bord à bord (le contenu passe sous les barres système).
 
-Les couleurs sont dans `res/values/colors.xml` (clair) et `res/values-night/colors.xml` (sombre), les styles des composants dans `res/values/styles.xml`.
+Les couleurs sont dans `res/values/colors.xml`, les styles des composants dans `res/values/styles.xml`.
 
 ## Prérequis
 
@@ -73,8 +74,7 @@ app/src/main/
     ├── layout/     Écrans, ligne de contact, feuille de contact
     ├── drawable/   Fonds, formes et icônes vectorielles
     ├── color/      Sélecteur de contour des champs
-    ├── values/     Couleurs, thème, styles (clair)
-    └── values-night/  Couleurs et thème (sombre)
+    └── values/     Couleurs, thème, styles
 ```
 
 ## Données

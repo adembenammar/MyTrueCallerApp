@@ -38,7 +38,8 @@ public final class Ecran {
         WindowInsetsControllerCompat ctrl =
                 WindowCompat.getInsetsController(a.getWindow(), a.getWindow().getDecorView());
         ctrl.setAppearanceLightStatusBars(!fondSombre && !nuit);
-        ctrl.setAppearanceLightNavigationBars(!nuit);
+        // le thème est toujours sombre : icônes claires dans la barre de navigation
+        ctrl.setAppearanceLightNavigationBars(false);
 
         final int haut = racine.getPaddingTop();
         final int bas = racine.getPaddingBottom();

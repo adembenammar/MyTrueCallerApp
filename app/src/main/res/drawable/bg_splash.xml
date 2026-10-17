@@ -2,7 +2,20 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
         <shape android:shape="rectangle">
-            <solid android:color="@color/brand_navy" />
+            <solid android:color="@color/brand_deep" />
+        </shape>
+    </item>
+    <!-- halo émeraude derrière le logo -->
+    <item
+        android:width="460dp"
+        android:height="460dp"
+        android:gravity="center">
+        <shape android:shape="oval">
+            <gradient
+                android:endColor="@color/glow_end"
+                android:gradientRadius="50%"
+                android:startColor="@color/glow_start"
+                android:type="radial" />
         </shape>
     </item>
     <item
@@ -18,26 +31,15 @@
         </shape>
     </item>
     <item
-        android:width="220dp"
-        android:height="220dp"
-        android:gravity="top|end"
-        android:right="-60dp"
-        android:top="-80dp">
+        android:width="300dp"
+        android:height="300dp"
+        android:bottom="-140dp"
+        android:gravity="bottom|start"
+        android:left="-120dp">
         <shape android:shape="oval">
             <stroke
                 android:width="1dp"
                 android:color="@color/header_ring" />
-        </shape>
-    </item>
-    <!-- halo bleu en bas à gauche -->
-    <item
-        android:width="380dp"
-        android:height="380dp"
-        android:bottom="-180dp"
-        android:gravity="bottom|start"
-        android:left="-140dp">
-        <shape android:shape="oval">
-            <solid android:color="#2E2563EB" />
         </shape>
     </item>
 </layer-list>

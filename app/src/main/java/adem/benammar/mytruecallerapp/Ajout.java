@@ -22,7 +22,7 @@ public class Ajout extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_ajout);
-        Ecran.appliquer(this, findViewById(R.id.main), null, false);
+        Ecran.appliquer(this, findViewById(R.id.main), null, true);
 
         db = new DBHelper(this);
 

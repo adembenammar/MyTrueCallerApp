@@ -37,14 +37,14 @@
                 android:layout_gravity="center"
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_phone"
-                app:tint="@color/white" />
+                app:tint="@color/on_brand_primary" />
         </FrameLayout>
 
         <View
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_gravity="top|end"
-            android:background="@drawable/bg_badge_amber"
+            android:background="@drawable/bg_badge"
             android:elevation="13dp" />
     </FrameLayout>
 
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:text="Caller"
             android:textAppearance="@style/TextAppearance.App.Display"
-            android:textColor="@color/brand_amber"
+            android:textColor="@color/brand_primary"
             android:textSize="34sp" />
     </LinearLayout>
 
@@ -88,7 +88,7 @@
         android:layout_width="160dp"
         android:layout_height="wrap_content"
         android:indeterminate="true"
-        app:indicatorColor="@color/brand_amber"
+        app:indicatorColor="@color/brand_primary"
         app:trackColor="@color/progress_track"
         app:trackCornerRadius="4dp"
         app:trackThickness="4dp" />

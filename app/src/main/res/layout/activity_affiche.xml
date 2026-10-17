@@ -137,12 +137,12 @@
             android:contentDescription="Ajouter un contact"
             android:text="Nouveau"
             android:textAllCaps="false"
-            android:textColor="@color/on_brand_amber"
+            android:textColor="@color/on_brand_accent"
             android:textSize="15sp"
             android:textStyle="bold"
-            app:backgroundTint="@color/brand_amber"
+            app:backgroundTint="@color/brand_accent"
             app:icon="@drawable/ic_add_24"
-            app:iconTint="@color/on_brand_amber"
+            app:iconTint="@color/on_brand_accent"
             app:shapeAppearanceOverlay="@style/ShapeAppearance.App.MediumComponent" />
     </FrameLayout>
 
